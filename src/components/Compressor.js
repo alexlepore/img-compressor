@@ -10,7 +10,7 @@ function Compressor(){
         <Container>
             <Header />
             <Handler />
-            <Footer />
+            <Footer/>
         </Container>
     )
 }
@@ -19,7 +19,7 @@ function Header(){
     return(
         <Row>
             <Col>
-                <h1 className="display-4 text-center">Img Compressor</h1>
+                <h1 className="display-4 text-center m-5">Img Compressor</h1>
             </Col>
         </Row>
     )
@@ -27,13 +27,13 @@ function Header(){
 
 function Footer(){
     return(
-            <Row>
-            <Col>
-                <small className="text-muted text-center">Img Compressor</small>
-            </Col>
-            <Col>
-                <p className="text-center"><span dangerouslySetInnerHTML={{ "__html": "&copy;" }} />2020</p>
-            </Col>
+            <Row className="mt-5">
+                <Col>
+                    <small className="text-muted text-center">Img Compressor</small>
+                </Col>
+                <Col>
+                    <p className="text-center"><span dangerouslySetInnerHTML={{ "__html": "&copy;" }} />2020</p>
+                </Col>
             </Row>
     )
 }

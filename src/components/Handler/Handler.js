@@ -46,6 +46,7 @@ function Handler(){
         setLink(null)
         setFile(null)
         document.getElementById('files-upload').value = null;
+        setCompressedClick(false);
     }
 
     return(
@@ -56,17 +57,26 @@ function Handler(){
                 className="img-fluid" />
             </Col>
             <Col>
-                <input type="file"
+                <input className="mt-2 mb-3" 
+                    type="file"
                     accept="image/*"
                     onChange={changeHandler}
                     id="files-upload" />
 
-                <Button variant="warning" onClick={clearHandler}>Clear</Button>
+                    <Row>
+                        <Col>
+                            <Button variant="warning" onClick={clearHandler}>Clear</Button>
+                        </Col>
+                    </Row>
 
-                <Button variant="outline-primary" onClick={Compression}>Compress</Button>
+                    <Row>
+                        <Col>
+                            <Button variant="outline-primary" onClick={Compression} className="mt-2">Compress</Button>
+                        </Col>
+                    </Row>
 
                 {compressedClick ? (
-                    <div>
+                    <div className="mt-3">
                         <Row>
                             <Col>
                                 <span>Previous File Size: {file.size}</span>
@@ -81,7 +91,7 @@ function Handler(){
                             <Col>
                                 <a href={compressedLink}
                                     download={compressedFile}>
-                                    Download
+                                        <Button variant="primary">Download</Button>
                                 </a>
                             </Col>
                         </Row>
