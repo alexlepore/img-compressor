@@ -19,7 +19,7 @@ function Header(){
     return(
         <Row>
             <Col>
-                <h1 className="display-4 text-center m-5">Img Compressor</h1>
+                <h1 className="display-4 text-center m-5 text-info font-weight-bolder">Img Compressor</h1>
             </Col>
         </Row>
     )
