@@ -1,3 +1,7 @@
+browser image compression tool built in react using hooks, functional components and the browser image npm package
+
+[browser-image-compression package](https://www.npmjs.com/package/browser-image-compression?activeTab=readme)
+
 ![image](./src/assets/imgs/screenshot.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
